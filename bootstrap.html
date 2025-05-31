@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+        .col-xl-4, .col-md-8, .col-sm-12, .col-xs-4, .col-md-5, .col-xs-6, .col-md-12, .col-lg-6 {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .col-xl-4 {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+        .col-md-8 {
+            flex: 0 0 66.6667%;
+            max-width: 66.6667%;
+        }
+        .col-sm-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .col-xs-4 {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+        .col-md-5 {
+            flex: 0 0 41.6667%;
+            max-width: 41.6667%;
+        }
+        .col-xs-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .col-md-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .col-lg-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        @media (max-width: 768px) {
+            .col-xl-4, .col-md-8, .col-sm-12, .col-xs-4, .col-md-5, .col-xs-6, .col-md-12, .col-lg-6 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        @media (min-width: 768px) {
+            .col-md-8, .col-md-5, .col-md-12 {
+                flex: 0 0 66.6667%;
+                max-width: 66.6667%;
+            }
+        }
+        @media (min-width: 992px) {
+            .col-xl-4, .col-lg-6 {
+                flex: 0 0 33.3333%;
+                max-width: 33.3333%;
+            }
+        }
+        @media (min-width: 1200px) {
+            .col-xl-4 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+        .col {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .col:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+        .col-xs-4, .col-xs-6 {
+            background-color: #28a745;
+        }
+        .col-xs-4:hover, .col-xs-6:hover {
+            background-color: #218838;
+        }
+        .col-md-5 {
+            background-color: #17a2b8;
+        }
+        .col-md-5:hover {
+            background-color: #138496;
+        }
+        .col-md-12 {
+            background-color: #ffc107;
+        }
+        .col-md-12:hover {
+            background-color: #e0a800;
+        }
+        .col-lg-6 {
+            background-color: #dc3545;
+        }
+        .col-lg-6:hover {
+            background-color: #c82333;
+        }
+    </style>
+<title>Bootstrap Example</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap Example">
+<meta name="keywords" content="Bootstrap, CSS, HTML">
+<meta name="author" content="Your Name">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="mstile-150x150.png">
+<meta name="application-name" content="Bootstrap Example">
+<meta name="format-detection" content="telephone=no">
+<meta name="google-site-verification" content="your-google-site-verification-code">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="7 days">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+</script>
+</head>
+<body>
+<div class="container">
+<h1>Hello Students!</h1>
+<p>Resize the browser window to see the effect.</p>
+<div class="row">
+<!--Size Medium and extra small-->
+<div class="col-xl-4 col-md-8 col-sm-12">supra</div>
+<div class="col-xs-4 col-md-5">.col-xs-3 </div>
+</div>
+<div class="row">
+<!--Size Large, medium and extra small-->
+<div class="col-xs-6 col-md-12 col-lg-6">.col-xs-6 </div>
+<div class="col-xs-6 col-md-2"></div>
+</div>
+</div>
+</body>
+</html>
